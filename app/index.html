@@ -4,39 +4,275 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+<!-- banner -->
+  <div class="banner-img bg-setting">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="offset-md-1">
+          <h2 class="text-white mb-2">台北當代藝術展</h2>
+          <h5 class="text-white mb-4">01 JUN - 31 OCT</h5>
+          <div class="d-flex">
+            <button type="button" class="btn btn-secondary ps-12 pe-12 me-2">購買票券</button>
+            <button type="button" class="btn btn-outline-white ps-12 pe-12">詳細資訊</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
+
+<!-- nav-bar -->
+<div class="nav-scroller">
+  <nav class="container nav" aria-label="Secondary navigation">
+    <a class="nav-link link-dark" aria-current="page" href="#">音樂</a>
+    <a class="nav-link link-dark" href="#">戲劇</a>
+    <a class="nav-link link-dark" href="#">設計</a>
+    <a class="nav-link link-dark" href="#">藝術</a>
+    <a class="nav-link link-dark" href="#">美食</a>
+    <a class="nav-link link-dark" href="#">旅遊</a>
+    <a class="nav-link link-dark" href="#">電影</a>
+    <a class="nav-link link-dark" href="#">親子</a>
+    <a class="nav-link link-dark" href="#">期間限定</a>
+  </nav>
+</div>
+
+<!-- 熱門特展 -->
+<div class="container container-sm-none mb-15">
+  <h2 class="mt-15 mb-6 ms-sm-0 ms-4">熱門特展</h2>
+  <ul class="hot-items list-unstyled">
+    <!-- 展覽1 (img)-->
+    <li class="card mb-3">
+      <div class="row bg-light g-0">
+        <!-- 圖片 -->
+        <div class="col-md-4">
+          <div class="card-img">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true" alt="2020 台味設計展">
+          </div>
+        </div>
+        <!-- 標題/內文/按鈕 -->
+        <div class="col-md-6">
+          <div class="card-body p-0 ps-6 mt-10 mb-10">
+            <h5 class="card-title mb-1">2020 台味設計展</h5>
+            <h5 class="card-subtitle mb-2 text-muted">$350</h5>
+            <p class="card-text mb-8">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+            <button type="button" class="btn btn-primary ps-4 pe-4 me-2">購買票券</button>
+              <button type="button" class="btn btn-outline-primary ps-4 pe-4">收藏展覽</button>
+          </div>
+        </div>
+        <!-- 日期/FB -->
+        <div class="col-md-1 offset-md-1">
+          <div class="card-body-info d-flex flex-column justify-content-between pe-6 mt-10 mb-10">
+            <h5>01 <br>
+              JUN<br>
+              |<br>
+              31<br></h5>
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/facebook-24px.svg" width="24" alt="icon-facebook">
+          </div>
+        </div>
+      </div>
+    </li>
+    <!-- 展覽2 (bg)-->
+    <li class="card mb-3">
+      <div class="row bg-light g-0">
+        <!-- 圖片 -->
+        <div class="col-md-4">
+          <div class="card-img card-2 bg-setting">
+            <!-- <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true" alt="2020 台味設計展"> -->
+          </div>
+        </div>
+        <!-- 標題/內文/按鈕 -->
+        <div class="col-md-6">
+          <div class="card-body position-relative p-0 ps-6 mt-10 mb-10">
+            <h5 class="card-title mb-1">No.22 線上設計展 
+              <!-- FB 手機版出現-->
+              <span><a class="d-inline" href="#"><img class="d-md-none align-text-top" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/facebook-24px.svg" width="24" alt="icon-facebook"></a></span>
+            </h5>
+            <h5 class="card-subtitle mb-2 text-muted">$350</h5>
+            <p class="card-text mb-8">這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
+            <button type="button" class="btn btn-primary ps-4 pe-4 me-2">購買票券</button>
+              <button type="button" class="btn btn-outline-primary ps-4 pe-4">收藏展覽</button>
+              <!-- 日期 手機版出現-->
+              <div class="card-body-info d-md-none position-absolute top-0 end-0" style="height: 210px;">
+                <div><h5>01 JUN — 31 OCT</h5></div>
+              </div>
+          </div>
+        </div>
+        <!-- 日期/FB 電腦版出現-->
+        <div class="col-md-1 offset-md-1">
+          <!-- Visible md 以上	.d-none .d-md-block -->
+          <div class="card-body-info d-none d-md-block d-md-flex flex-column justify-content-between pe-6 mt-10 mb-10" style="height: 220px;" >
+            <div><h5>01 <br>
+              JUN<br>
+              |<br>
+              31<br></h5></div>
+            <div><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/facebook-24px.svg" width="24" alt="icon-facebook"></a></div>
+            
+          </div>
+        </div>
+      </div>
+    </li>
+    <!-- 展覽3 -->
+    <li class="card mb-3">
+      <div class="row bg-light g-0">
+        <!-- 圖片 -->
+        <div class="col-md-4">
+          <div class="card-img card-3 bg-setting">
+            <!-- div裡可以為空嗎？ -->
+          </div>
+        </div>
+        <!-- 標題/內文/按鈕 -->
+        <div class="col-md-6">
+          <div class="card-body position-relative p-0 ps-6 mt-10 mb-10">
+            <h5 class="card-title mb-1">高雄設計節 
+              <!-- FB 手機版出現-->
+              <span><a class="d-inline" href="#"><img class="d-md-none align-text-top" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/facebook-24px.svg" width="24" alt="icon-facebook"></a></span>
+            </h5>
+            <h5 class="card-subtitle mb-2 text-muted">$350</h5>
+            <p class="card-text mb-8">設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？</p>
+            <button type="button" class="btn btn-primary ps-4 pe-4 me-2">購買票券</button>
+              <button type="button" class="btn btn-outline-primary ps-4 pe-4">收藏展覽</button>
+              <!-- 日期 手機版出現-->
+              <div class="card-body-info d-md-none position-absolute top-0 end-0" style="height: 210px;">
+                <div><h5>01 JUN — 31 OCT</h5></div>
+              </div>
+          </div>
+        </div>
+        <!-- 日期/FB 電腦版出現-->
+        <div class="col-md-1 offset-md-1">
+          <!-- Visible md 以上	.d-none .d-md-block -->
+          <div class="card-body-info d-none d-md-block d-md-flex flex-column justify-content-between pe-6 mt-10 mb-10" style="height: 220px;" >
+            <div><h5>01 <br>
+              JUN<br>
+              |<br>
+              31<br></h5></div>
+            <div><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/facebook-24px.svg" width="24" alt="icon-facebook"></a></div>
+            
+          </div>
+        </div>
+      </div>
+    </li>
+</div>
+
+<!-- 直播回顧 -->
+<div class="container mb-15">
+  <h2 class="mt-15 mb-6">直播回顧</h2>
+  <div class="liveStream-img bg-setting">
+    <div class="row"> 
+      <div class="col-12 col-md-8 col-lg-5">
+        <div class="liveStream-text pt-10 pb-10 ps-6 pe-6 ps-md-8 pe-md-8">
+          <div class="title d-flex">
+            <h3 class="mb-8">開幕對談<span class="border-end ps-3 me-3"></span>藝術展演巡禮</h3>
+          </div>
+          <img class="mb-3" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people.png?raw=true" alt="臺北現代聯合總監-Ken Hsu">
+          <h5 class="mb-2">臺北現代聯合總監｜Ken Hsu</h5>
+          <h5 class="mb-4">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</h5>
+          <button type="button" class="btn btn-secondary ps-12 pe-12">點此觀看</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
+<!-- 猜你也喜歡...-->
+<div class="container mb-15">
+  <h2 class="mt-15 mb-6">猜你也喜歡...</h2>
+  <div class="row">
+    <div class="col-12 col-md-11 offset-md-1">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card w-100">
+              <img src="https://images.unsplash.com/photo-1492087368735-957f2d176504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=960&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div> 
+          </div>
+          <div class="swiper-slide">
+            <div class="card w-100">
+            <img src="https://images.unsplash.com/photo-1567722681579-c671cabd2810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">No.22 線上設計展</h5>
+              <p class="card-text">$350</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card w-100">
+            <img src="https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">No.22 線上設計展</h5>
+              <p class="card-text">$350</p>
+            </div>
+            </div>
+          </div>
+           <div class="swiper-slide">
+            <div class="card w-100">
+              <img src="https://images.unsplash.com/photo-1492087368735-957f2d176504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=960&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div> 
+          </div>
+          <div class="swiper-slide">
+            <div class="card w-100">
+            <img src="https://images.unsplash.com/photo-1567722681579-c671cabd2810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">No.22 線上設計展</h5>
+              <p class="card-text">$350</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card w-100">
+            <img src="https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">No.22 線上設計展</h5>
+              <p class="card-text">$350</p>
+            </div>
+            </div>
+          </div>
+           <div class="swiper-slide">
+            <div class="card w-100">
+              <img src="https://images.unsplash.com/photo-1492087368735-957f2d176504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=960&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div> 
+          </div>
+          <div class="swiper-slide">
+            <div class="card w-100">
+            <img src="https://images.unsplash.com/photo-1567722681579-c671cabd2810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">No.22 線上設計展</h5>
+              <p class="card-text">$350</p>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card w-100">
+            <img src="https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">No.22 線上設計展</h5>
+              <p class="card-text">$350</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -56,3 +292,5 @@ current: index
     </div>
   </div>
 </div>
+
+

@@ -1,61 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <!-- header -->
+  <div class="container border-bottom">
+    <div class="d-flex position-relative" style="height: 80px;">
+      <a class="h4 position-absolute top-50 start-50 translate-middle" href="index.html">EXHIBINECTION</a>
+      <ul class="list-unstyled d-flex position-absolute top-50 end-0 translate-middle-y">
+        <li class="nav-item d-none d-sm-block">
+          <a class="link-dark" href="#">Sign in</a>
+        </li>
+        <li class="nav-item ms-8 d-none d-sm-block">
+          <a class="link-dark" href="#">Sign up</a>
+        </li>
+        <li class="nav-item ms-8">
+          <a class="link-black position-relative" aria-current="page" href="#">
+            <span class="material-icons">confirmation_number</span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">3</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+    <nav class="visually-hidden navbar navbar-expand-lg navbar-light bg-white border ">
+      <div class="container-fluid position-relative d-flex justify-content-between">
+        <!-- logo -->
+        <div><a class="navbar-brand" href="#">
+            <h4 class="text-primary h4">EXHIBINECTION</h4>
+          </a></div>
+
+        <!-- 漢堡選單 按鈕 -->
+
+        <!-- 選單項目&漢堡式折疊選單 -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Sign in</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#">Sign up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link active" aria-current="page" href="#">
+                <span class="material-icons">confirmation_number</span></a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+
         </div>
       </div>
     </nav>
 
-    <%- contents %>
 
-    <footer class="footer">
-      footer
-    </footer>
+  <%- contents %>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+  <!-- footer -->
+  <div class="footer-img bg-setting">
+    <div class="container h-100">
+      <div class="row align-items-end h-100">
+        <div>
+          <h2 class="text-white mb-2">想收到最新消息嗎？<br>快訂閱我們！</h2>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-secondary ps-12 pe-12" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer nav -->
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center" style="height: 80px;">
+      <ul class="list-unstyled d-md-flex align-items-md-center">
+        <li>
+          <a class="h4 text-black me-4" href="index.html">EXHIBINECTION</a>
+        </li>
+        <li>
+          <p>© 2020. All Rights Reserved.</p>
+        </li>
+
+      </ul>
+      <ul class="list-unstyled d-flex">
+        <li class="nav-item d-none d-sm-block">
+          <a class="link-dark" href="#">Sign in</a>
+        </li>
+        <li class="nav-item ms-8 d-none d-sm-block">
+          <a class="link-dark" href="#">Sign up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+      <script src="./assets/js/vendors.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="./assets/js/all.js"></script>
+</body>
 
 </html>

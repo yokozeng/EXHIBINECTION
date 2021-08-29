@@ -2,5 +2,89 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "base";
 
-@import './layout/index.scss'
+@import './layout/index.scss';
+
+// 熱門特展 手機滿版
+.container-sm-none{
+    @media (max-width: 376px) {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+}
+.btn{
+    padding: 10px 0;
+}
+.yk-nav{
+    padding: 0 85px;
+}
+.bg-setting{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-img{
+    height: 480px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg?raw=true");
+  }
+.footer-img{
+    height: 400px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true");
+    padding-bottom: 36px; /*HTML那邊推不動＝＝*/
+
+}
+  .nav-scroller{
+    height: 2.75rem; /* 隱藏下方捲軸 */
+    overflow-y: hidden;
+    border-bottom: 1px solid #707070;
+    .nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem; /* 隱藏下方捲軸 */
+        overflow-x: scroll;
+        white-space: nowrap;
+        a:hover{
+            color: $secondary;
+            border-bottom: 3px solid $secondary;
+        }
+      }
+  }
+
+
+  .swiper-container {
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .card-2{
+    height: 100%;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true");
+  }
+  .card-3{
+    height: 100%;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true");
+  }
+
+  .liveStream-img{
+      height: 482px;
+      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true");
+  }
+  .liveStream-text{
+      color: $white;
+      background: #190014CC;
+  }

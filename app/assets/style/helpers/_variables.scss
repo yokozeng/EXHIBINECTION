@@ -67,14 +67,16 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #630834; // $blue !default;
+$secondary:     #E31277;//$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         #EFEFEF;//$gray-100 !default;
+$dark:          #707070; //$gray-900 !default;
+$white:         #fff;
+$black:         #000;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +88,9 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "white":      $white, //new
+  "black":      $black  //new
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -252,9 +256,16 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75, //new
+  4: $spacer * 1,   //* 1.5,  16
+  5: $spacer * 1.25, //* 3,   20
+  6: $spacer * 1.5,  //new    24
+  7: $spacer * 1.75, //new    28
+  8: $spacer * 2,    //new    32
+  9: $spacer * 2.25, //new    36
+  10:$spacer * 2.5,  //new    40
+  12:$spacer * 3,  //new    48
+  15:$spacer * 3.75, //new    60
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -343,7 +354,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.875rem; //1.5rem !default;
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;
@@ -1082,10 +1093,10 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0; //$spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-width:                 0; //$border-width !default;
+$card-border-radius:                0; //$border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
