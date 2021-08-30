@@ -20,6 +20,10 @@
 .fz-36{
     font-size: 36px;
 }
+.fz-40{
+    font-size: 40px;
+    font-family: 'Roboto'; //甘安捏？
+}
 .yk-nav{
     padding: 0 85px;
 }
@@ -90,4 +94,11 @@
   .liveStream-text{
       color: $white;
       background: #190014CC;
+  }
+  
+//detail頁面的購票
+  @include media-breakpoint-up(lg) {
+    .w-md-50 {
+      width: 50%;
+    }
   }
