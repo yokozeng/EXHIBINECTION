@@ -6,6 +6,7 @@
 
 @import './layout/index.scss';
 
+
 // 熱門特展 手機滿版
 .container-sm-none{
     @media (max-width: 376px) {
@@ -95,10 +96,51 @@
       color: $white;
       background: #190014CC;
   }
-  
+
 //detail頁面的購票
   @include media-breakpoint-up(lg) {
     .w-md-50 {
       width: 50%;
     }
   }
+
+ 
+
+//modal
+.modal.right .modal-dialog{
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    transform: translate3d(0%, 0, 0); /*這是蝦咪*/
+  }
+  .modal.right .modal-content{   /*這一段不太懂*/
+    height: 100%;
+    overflow-y: auto;
+  }
+  .modal{
+    &-content{
+      border-radius: 0;
+      border: none;
+    }
+    &-header{
+      border-bottom: none;
+    }
+    &-body{
+        padding-top: 0;
+      .card{
+        min-width: 540px; /*哪裡有card?*/
+      }
+    }
+    &-footer{
+      border-top: none;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+
+  
+  
