@@ -9,11 +9,10 @@ footerDisplay: d-none
 ---
 
 <div class="container">
-    <!-- 訂單 -->
-    <div class="row">
-        <div class="col-12 col-xl-8">
-            <!-- 進度條 -->
-            <div class="row timeline-section">
+    <!-- 進度條 -->
+    <div class="row g-0">
+        <div class="col-12 col-xl-8 timeline-section">
+            <div class="row">
                 <div class="col-3">
                     <div class="timeline-pointer">
                         <p class="fw-bolder">確認訂單</p>
@@ -36,6 +35,11 @@ footerDisplay: d-none
                 </div>
             </div>
 
+        </div>
+    </div>
+    <!-- 訂單 -->
+    <div class="row">
+        <div class="col-12 col-xl-8">
             <!-- 展覽1 -->
             <div class="row g-0">
                 <!-- 圖片 -->
@@ -64,7 +68,9 @@ footerDisplay: d-none
                     <!-- pc顯示 -->
                     <div class="d-none d-xl-flex justify-content-xl-between align-items-xl-center">
                         <!-- 價格 -->
-                        <div><h5 class="fw-bold">NT$350</h5></div>
+                        <div>
+                            <h5 class="fw-bold">NT$350</h5>
+                        </div>
                         <!-- 張數 -->
                         <div class="d-md-flex flex-md-row-reverse align-items-md-center">
                             <span class="material-icons"><a class="link-black" href="#">add</a></span>
@@ -73,7 +79,7 @@ footerDisplay: d-none
                         </div>
                         <!-- 按鈕 -->
                         <div><span class="material-icons"><a class="link-black" href="#">close</a></span></div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -106,16 +112,18 @@ footerDisplay: d-none
                     <!-- pc顯示 -->
                     <div class="d-none d-xl-flex justify-content-xl-between align-items-xl-center">
                         <!-- 價格 -->
-                        <div><h5 class="fw-bold">NT$350</h5></div>
+                        <div>
+                            <h5 class="fw-bold">NT$350</h5>
+                        </div>
                         <!-- 張數 -->
-                        <div class="d-md-flex flex-md-row-reverse align-items-md-center">
+                        <div class="d-xl-flex flex-xl-row-reverse align-items-xl-center">
                             <span class="material-icons"><a class="link-black" href="#">add</a></span>
                             <h5 class="fw-bold">01</h5>
                             <span class="material-icons"><a class="link-black" href="#">remove</a></span>
                         </div>
                         <!-- 按鈕 -->
                         <div><span class="material-icons"><a class="link-black" href="#">close</a></span></div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -148,7 +156,9 @@ footerDisplay: d-none
                     <!-- pc顯示 -->
                     <div class="d-none d-xl-flex justify-content-xl-between align-items-xl-center">
                         <!-- 價格 -->
-                        <div><h5 class="fw-bold">NT$350</h5></div>
+                        <div>
+                            <h5 class="fw-bold">NT$350</h5>
+                        </div>
                         <!-- 張數 -->
                         <div class="d-md-flex flex-md-row-reverse align-items-md-center">
                             <span class="material-icons"><a class="link-black" href="#">add</a></span>
@@ -157,7 +167,7 @@ footerDisplay: d-none
                         </div>
                         <!-- 按鈕 -->
                         <div><span class="material-icons"><a class="link-black" href="#">close</a></span></div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -165,45 +175,26 @@ footerDisplay: d-none
         </div>
     </div>
     <!-- 小計&下一步 -->
-    <div class="row">
-        <div class="col-12 offset-md-8 col-md-4 bg-white mt-5 mb-10">
+    <div class="row g-0">
+        <div class="col-12 bg-white pt-4 pb-4 fixed-bottom">
             <div class="row">
-                <div class="col-6"></div>
-                <div class="col-6 col-md-12">
-                    <div class="d-flex justify-content-between mb-3">
-                        <h5 class="fw-bold">小計</h5>
-                        <h5 class="fw-bold">NT$1050</h5>
+                <div class="row align-items-end ">
+                    <!-- 空白 -->
+                    <div class="col-6 col-xl-2"></div>
+                    <!-- 金額 & 下一步按鈕 -->
+                    <div class="col-6 offset-xl-6 col-xl-4">
+                        <dl class="d-none d-xl-flex row mb-3">
+                            <dt class="col-3 h5 fw-bold">小計</dt>
+                            <dd class="col-9 h5 fw-bold text-end">NT$1050</dd>
+                        </dl>
+                        <a class="btn btn-secondary w-100" href="checkOrder-2.html">下一步</a>
                     </div>
-                    <button type="button" class="btn btn-secondary w-100"> <a class="link-white"
-                            href="checkOrder-2.html">下一步</a></button>
                 </div>
             </div>
+            
         </div>
     </div>
 
 </div>
 
 
-
-<!-- 保留 -->
-<div class="d-none row g-0">
-    <!-- 圖片 -->
-    <div class="col-6 pe-4">
-        <div class="bg-setting"
-            style="height: 84px; background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true); background-size: cover">
-        </div>
-    </div>
-    <!-- 文字 -->
-    <div class="col-6">
-        <div class="d-flex justify-content-between">
-            <p class="card-title fw-bold mb-1">高雄設計節</p>
-            <!-- 按鈕 -->
-            <span class="material-icons"><a class="link-black" href="#">close</a></span>
-        </div>
-        <p class="card-text fw-bold mb-1">01 JUN — 31 OCT</p>
-        <div class="d-flex justify-content-between">
-            <p class="text-dark fw-light mb-4">全票 <span class="h5 text-black fw-bold">1</span> </p>
-            <h5 class="fw-bold">NT$350</h5>
-        </div>
-    </div>
-</div>

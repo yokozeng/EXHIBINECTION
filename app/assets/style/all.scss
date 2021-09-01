@@ -15,6 +15,9 @@
         margin: 0;
       }
 }
+
+
+
 .btn{
     padding: 10px 0;
 }
@@ -97,10 +100,22 @@
       background: #190014CC;
   }
 
-//detail頁面的購票
-  @include media-breakpoint-up(lg) {
+
+  @include media-breakpoint-up(md) {
+    //detail頁面的購票
     .w-md-50 {
       width: 50%;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .mb-xl-4{
+        margin-bottom: 16px;
+    }
+    .mb-xl-20{
+        margin-bottom: 80px;
+    }
+    .mb-xl-25{
+        margin-bottom: 100px;
     }
   }
 
@@ -142,7 +157,6 @@
   }
 
 
-  
   //進度條
   .timeline-section{
     position: relative;
@@ -159,7 +173,7 @@
         margin-top: 8px;
     }
   }
-//實心
+    //實心
   .timeline-pointer{
     position: relative;
     display: flex;
@@ -191,4 +205,15 @@
         background-color: #ffffff;
         border: 1px solid #E31277;
       }
+  }
+
+  //訂單資訊 
+  .yk-input-border{
+      border: 1px solid #CED4DA;
+  }
+
+
+  .material-icons-check{
+      font-size: 44px;
+      text-align: center;
   }

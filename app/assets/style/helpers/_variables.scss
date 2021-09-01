@@ -267,12 +267,15 @@ $spacers: (
   11:$spacer * 2.75, //new    44
   12:$spacer * 3,    //new    48
   13:$spacer * 3.25, //new    52
+  14:$spacer * 3.5,  //new    56
   15:$spacer * 3.75, //new    60
   16:$spacer * 4,    //new    64
   17:$spacer * 4.25, //new    68
   18:$spacer * 4.5,  //new    72
   19:$spacer * 4.75, //new    76
   20:$spacer * 5,    //new    80
+  24:$spacer * 6,    //new    96
+  25:$spacer * 6.25, //new    100
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
